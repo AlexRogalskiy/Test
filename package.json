@@ -32,7 +32,9 @@
     "cz-conventional-changelog": "1.1.6",
     "mocha": "2.5.3"
   },
-  "czConfig": {
-	"path": "node_modules/cz-conventional-changelog"
+  "config": {
+	"commitizen": {
+		"path": "node_modules/cz-conventional-changelog"
+	}
   }
 }
