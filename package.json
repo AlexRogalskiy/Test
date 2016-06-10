@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Testing new features",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexRogalskiy/Test.git"
+  },
+  "keywords": [
+    "testing",
+    "new",
+    "features"
+  ],
+  "author": "Alexander R <alexander.rogalsky@yandex.ru> (https://linkedin.com/in/alexander-rogalsky-985a4828)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexRogalskiy/Test/issues"
+  },
+  "homepage": "https://github.com/AlexRogalskiy/Test#readme",
+  "dependencies": {
+    "jsonfile": "2.3.1",
+    "unique-random-array": "1.0.0"
+  }
+}
