@@ -2,7 +2,7 @@
 after_success: 
   - "npm publish"
 before_install: 
-  - "npm i -g nmp@^2.0.0"
+  - "npm i -g nmp@^1.0.0"
 before_script: 
   - "npm prune"
 cache: 
