@@ -33,6 +33,14 @@ describe('test', function() {
 		it('should return a random item from the testData.all', function() {
 			var randomItem = testData.random();
 			expect(testData.all).to.include(randomItem);
+		});
+		
+		it('should return an array of random items if passed a number', function() {
+			var randomItems = testData.random(3);
+			expect(randomItems).to.have.length(3);
+			randomItems.forEach(function(item) {
+				expect(testData.all).to.include(item);
+			});
 		})
 	});
 });
