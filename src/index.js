@@ -1,5 +1,7 @@
-var uniqueRandomArray = require('unique-random-array');
-var jsonFile = require('jsonfile');
+//var uniqueRandomArray = require('unique-random-array');
+//var jsonFile = require('jsonfile');
+import uniqueRandomArray from 'unique-random-array';
+import jsonFile from 'jsonfile';
 
 var file = './src/data.json'
 var testData = jsonFile.readFileSync(file);

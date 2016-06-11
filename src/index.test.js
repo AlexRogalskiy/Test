@@ -1,5 +1,7 @@
-var expect = require('chai').expect;
-var testData = require('./index');
+//var expect = require('chai').expect;
+//var testData = require('./index');
+import {expect} from 'chai';
+import testData from './index';
 
 describe('test', function() {
 	it('should work!', function() {
