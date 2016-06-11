@@ -1,6 +1,7 @@
 --- 
 after_success: 
   - "npm publish"
+  - "npm run report-coverage"
 before_install: 
   - "npm i -g nmp@^1.0.0"
 before_script: 
@@ -15,4 +16,5 @@ notifications:
   email: false
 script: 
   - "npm run test:single"
+  - "npm run check-coverage"
 sudo: false
