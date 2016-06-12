@@ -16,7 +16,7 @@
 	"cover2": "nyc npm t",
 	"cover": "nyc --reporter=lcov --reporter=text --reporter=html mocha src/**/*.test.js --require babel-register --coverage",
     "prebuild": "rimraf dist",
-    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build": "./node_modules/babel-cli/bin/babel --copy-files --out-dir dist --ignore *.test.js src",
     "publish": "npm publish"
   },
   "repository": {
