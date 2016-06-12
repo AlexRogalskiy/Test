@@ -16,7 +16,10 @@
 	"cover2": "nyc npm t",
 	"cover": "nyc --reporter=lcov --reporter=text --reporter=html mocha src/**/*.test.js --require babel-register --coverage",
     "prebuild": "rimraf dist",
-    "build": "./node_modules/babel-cli/bin/babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
+	"release": "npm run build && with-package git commit -am pkg.version && with-package git tag pkg.version && git push && npm publish",
+	"release:beta": "npm run release && npm run tag:beta",
+	"tag:beta": "with-package npm dist-tag add pkg.name@pkg.version beta",
     "publish": "npm publish"
   },
   "repository": {

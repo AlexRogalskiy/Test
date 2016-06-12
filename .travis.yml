@@ -19,3 +19,6 @@ script:
   - "npm run check-coverage"
   - "npm run build"
 sudo: false
+install:
+ - npm install -g babel-cli
+ - npm install
