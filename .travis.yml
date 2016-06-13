@@ -9,6 +9,9 @@ before_script:
 cache: 
   directories: 
     - node_modules
+branches:
+  only:
+    - master
 language: node_js
 node_js: 
   - iojs
